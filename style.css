@@ -44,7 +44,7 @@ html {
   transition: 0.5s;
   text-decoration: none;
 }
-.contenedor-header header nav ul li a:hover {
+.container-header header nav ul li a:hover {
   color: cyan;
 }
 .nav-responsive {
