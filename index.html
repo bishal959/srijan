@@ -1,261 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
-      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-   
-    <title>Sreezan Subedi</title>
-    <link rel="icon" href="mylogo.png"/>
-    <link rel="stylesheet" href="style.css" />
-    
-  </head>
-  <body>
-    <!-- MENU NAVIGATION -->
-    <div class="container-header">
-      <header>
-        <div class="logo">
-          <a href="#home">Shree</a>
-        </div>
-        <nav id="nav">
-          <ul>
-            <li><a href="#home" onclick="seleccionar()">HOME</a></li>
-            <li><a href="#sobremi" onclick="seleccionar()">ABOUT</a></li>
-           
-            <li><a href="#portfolio" onclick="seleccionar()">PROJECT</a></li>
-            <li><a href="#contacto" onclick="seleccionar()">CONTACT</a></li>
-          </ul>
-        </nav>
-        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
-          <i class="fa-solid fa-bars"></i>
-        </div>
-      </header>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>Srijan Subedi</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">Srijan</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                      
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Srijan</span><br> UI / UX Designer</h1>
+
+                    <a href="#" class="button">Contact</a>
+                </div>
+
+                <div class="home__social">
+                    <a href="https://www.linkedin.com/in/sreezan-subedi-39900526a/" class="home__social-icon" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://www.behance.net/srijansubedi" class="home__social-icon" target="_blank" ><i class='bx bxl-behance' ></i></a>
+                    <a href="https://github.com/shreezan21" class="home__social-icon" target="_blank"><i class='bx bxl-github' ></i></a>
+                </div>
+
+                <div class="home__img">
+                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <mask id="mask0" mask-type="alpha">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                        </mask>
+                        <g mask="url(#mask0)">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                            <image class="home__blob-img" x="70" y="-98" height="780"  href="assets/img/profile.png"/>
+                        </g>
+                    </svg>
+                </div>
+            </section>
+
+            <!--===== ABOUT =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title">About</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="assets/img/about.jpg" alt="">
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle">I'am Srijan</h2>
+                        <p class="about__text">
+                            I'm a UI/UX designer and photographer. My designs prioritize user-centric experiences, while my photography captures captivating moments and emotions. With a keen eye for aesthetics, I blend design principles into my photography, delivering visually compelling stories. Explore my portfolio to see my dual creative passions come to life.</p>           
+                    </div>                                   
+                </div>
+            </section>
+
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
+
+                <div class="skills__container bd-grid">          
+                    <div>
+                        <h2 class="skills__subtitle">Profesional Skills</h2>
+                        <p class="skills__text">I have created an extensive list of my skills, categorizing them according to the percentage that represents my level of expertise in each skill.</p>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-html5 skills__icon'></i>
+                                <span class="skills__name">HTML5</span>
+                            </div>
+                            <div class="skills__bar skills__html">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage">80%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-css3 skills__icon'></i>
+                                <span class="skills__name">CSS3</span>
+                            </div>
+                            <div class="skills__bar skills__css">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">75%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-javascript skills__icon' ></i>
+                                <span class="skills__name">JAVASCRIPT</span>
+                            </div>
+                            <div class="skills__bar skills__js">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">5%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxs-paint skills__icon'></i>
+                                <span class="skills__name">UX/UI</span>
+                            </div>
+                            <div class="skills__bar skills__ux">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>              
+                        <img src="assets/img/work3.jpg" alt="" class="skills__img">
+                    </div>
+                </div>
+            </section>
+   <!--===== WORK =====-->
+   <section class="work section" id="work">
+    <h2 class="section-title">Work</h2>
+
+    <div class="work__container bd-grid">
+        <a href="" class="work__img">
+            <img src="assets/img/ghar.jpg" alt="">
+        </a>
+        <a href="" class="work__img">
+            <img src="assets/img/chautara.jpg" alt="">
+        </a>
+        <a href="" class="work__img">
+            <img src="assets/img/himal.jpg" alt="">
+        </a>
+        <a href="" class="work__img">
+            <img src="assets/img/himal2.jpg" alt="">
+        </a>
+        <a href="" class="work__img">
+            <img src="assets/img/simp.jpg" alt="">
+        </a>
+        <a href="" class="work__img">
+            <img src="assets/img/okh.jpg" alt="">
+        </a>
     </div>
+</section>
+            
+            <!--===== CONTACT =====-->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
 
-    <!-- SECCION HOME -->
-    <section id="home" class="home">
-      <div class="contenido-banner">
-        <div class="contenedor-img">
-          <img src="sssss.png" alt="" />
-        </div>
-        
-        <h1>Srijan Subedi</h1>
-        
-        <h2>A Photographer</h2>
-        <div class="redes">
-          <a href="https://facebook.com/shreezan21" target="_blank" style="background-color:#3b5998;"><i class="fa-brands fa-facebook-f"></i></a>
-          <a href="https://instagram.com/shreezan_21" target="_blank" style=" background: #f09433; 
-          background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
-          background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-          background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
-            ;"><i class="fa-brands fa-instagram"></i></a>
-      <a href="https://twitter.com/shreezan_21" target="_blank" style="background-color:#1DA1F2;"><i class="fa-brands fa-twitter"></i></a>
+                <div class="contact__container bd-grid">
+                    <form action="" class="contact__form">
+                        <input type="text" placeholder="Name" class="contact__input">
+                        <input type="mail" placeholder="Email" class="contact__input">
+                        <textarea name="" id="" cols="0" rows="10" class="contact__input" placeholder="Write your message here..."></textarea>
+                        <input type="button" value="Send" class="contact__button button">
+                    </form>
+                </div>
+            </section>
+        </main>
 
-      </div>
-    </section>
-
-    <!-- SECCION SOBRE MI -->
-    <section id="sobremi" class="sobremi">
-      <div class="contenido-seccion">
-        <h2>About Me</h2>
-        <p>
-          <span>Namaste, I'm Sreezan Subedi.</span>  A talented science student and photographer with a passion for exploring the world through the lens of his camera. With a keen eye for detail and a deep appreciation for the beauty of nature and humanity, Sreezan has captured stunning images that have garnered recognition and admiration from both peers and professionals in the field.
-         
-        </p>
-
-        <div class="fila">
-          <!-- datos personales -->
-          <div class="col">
-            <h3>Personal Data</h3>
-            <ul>
-              <li>
-                <strong>Telephone</strong>
-                011-620291
-              </li>
-              <li>
-                <strong>Contact No</strong>
-                9840783313
-              </li>
-              <li>
-                <strong>Email</strong>
-                  srijansubedi21@gmail.com
-              </li>
-              <li>
-                <strong>Website</strong>
-                www.srijansubedi.com.np
-              </li>
-              <li>
-                <strong>Address</strong>
-                Chautara Sangachokgadi Municipality-5, Nepal
-              </li>
-              <li>
-                <strong>Work</strong>
-                <span>Photographer</span>
-              </li>
-            </ul>
-          </div>
-
-          <!-- intereses -->
-          <div class="col">
-            <h3>Interests</h3>
-            <div class="contenedor-intereses">
-              <div class="interes">
-                <i class="fa-solid fa-gamepad"></i>
-                <span>GAMING</span>
-              </div>
-              <div class="interes">
-                <i class="fa-solid fa-headphones"></i>
-                <span>MUSIC</span>
-              </div>
-              <div class="interes">
-                <i class="fa-solid fa-car"></i>
-                <span>RIDING</span>
-              </div>
-              <div class="interes">
-                <i class="fa-brands fa-apple"></i>
-                <span>TECH</span>
-              </div>
-              <div class="interes">
-                <i class="fa-solid fa-person-hiking"></i>
-                <span>TRAVEL</span>
-              </div>
-              <div class="interes">
-                <i class="fa-solid fa-book"></i>
-                <span>READING</span>
-              </div>
-              <div class="interes">
-                <i class="fa-solid fa-car"></i>
-                <span>AUTOS</span>
-              </div>
-              <div class="interes">
-                <i class="fa-solid fa-camera"></i>
-                <span>PHOTO</span>
-              </div>
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">Srijan Subedi</p>
+            <div class="footer__social">
+                <a href="https://www.facebook.com/shreezan21" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+                <a href="https://www.instagram.com/shreezan_21/" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+                <a href="https://www.twitter.com/shreezan_21/" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
             </div>
-          </div>
-        </div>
-        <a href="cv.pdf" style="text-decoration: none;" target="blank">
-        <button>
-          Download CV 
-          <i class="fa-solid fa-download"></i>
-          <span class="overlay"></span>
-        </button>
-       </a>
-      </div>
-    </section>
+            <p class="footer__copy">&#169; Srijan Subedi. All rigths reserved</p>
+        </footer>
 
- 
 
-    <!-- SECCION PORTFOLIO -->
-    <section id="portfolio" class="portfolio">
-      <div class="contenido-seccion">
-        <h2>PROJECTS</h2>
-        <div class="galeria">
-          <div class="proyecto">
-            <img src="himal2.jpg" alt="" />
-            <div class="overlay">
-              <h3>Mountains</h3>
-              <p>Photo of Jugal Himal situated in Chautara.</p>
-            </div>
-          </div>
-          <div class="proyecto">
-            <img src="okh.jpg" alt="" />
-            <div class="overlay">
-              <h3>Park</h3>
-              <p>Park with beautifil view at top of Jalbire.</p>
-            </div>
-          </div>
-          <div class="proyecto">
-            <img src="simp.jpg" alt="" />
-            <div class="overlay">
-              <h3>Hills</h3>
-              <p>Hilly landscape of Sindhupalchok.</p>
-            </div>
-          </div>
-          <div class="proyecto">
-            <img src="ghar.jpg" alt="" />
-            <div class="overlay">
-              <h3>House</h3>
-              <p>Traditional house of Nepal at Simpani.</p>
-            </div>
-          </div>
-          <div class="proyecto">
-            <img src="mountain.jpg" alt="" />
-            <div class="overlay">
-              <h3>Mountains</h3>
-              <p>Photo of Jugal Himal situated in Chautara.</p>
-            </div>
-          </div>
-          <div class="proyecto">
-            <img src="chautara.jpg" alt="" />
-            <div class="overlay">
-              <h3>Chautara</h3>
-              <p>My home town.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
 
-    <!-- SECCION CONTACTO -->
-    <section id="contacto" class="contacto">
-      <div class="contenido-seccion">
-        <h2>CONTACT</h2>
-        <div class="fila">
-          <!-- Formulario -->
-          <div class="col">
-            <input type="text" placeholder="Number" />
-            <input type="text" placeholder="Telephone" />
-            <input type="text" placeholder="Address" />
-            <input type="text" placeholder="Email" />
-            <textarea
-              name=""
-              id=""
-              cols="30"
-              rows="10"
-              placeholder="Message"
-            ></textarea>
-            <button>
-              Submit Message<i class="fa-solid fa-paper-plane"></i>
-              <span class="overlay"></span>
-            </button>
-          </div>
-          <!-- Mapa -->
-          <div class="col">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d220.63679499467906!2d85.71682595487147!3d27.77315869348873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2snp!4v1678280676887!5m2!1sen!2snp" width="350" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-           
-      </div>
-    </section>
-
-    <!-- footer -->
-    <footer>
-      <a href="#inicio" class="arriba">
-        <i class="fa-solid fa-angles-up"></i>
-      </a>
-      <div class="redes">
-        <a href="https://facebook.com/shreezan21/" target="blank" style="background-color:#3b5998;"><i class="fa-brands fa-facebook-f"></i></a>
-          <a href="https://instagram.com/shreezan_21/" target="blank" style=" background: #f09433; 
-          background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
-          background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-          background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
-            ;"><i class="fa-brands fa-instagram"></i></a>
-      <a href="https://twitter.com/shreezan_21" target="blank" style="background-color:#1DA1F2;"><i class="fa-brands fa-twitter"></i></a>
-          
-          
-          
-        
-      </div>
-    </footer>
-
-    <script src="script.js"></script>
-  </body>
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
